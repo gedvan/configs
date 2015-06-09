@@ -64,7 +64,7 @@ syntax on           " enable syntax highlighting
 " Mappings
 " ------------------------------------------------------------------------------
 
-" Mapeia o Home para ir para o primeiro caractere n„o-branco da linha
+" Mapeia o Home para ir para o primeiro caractere n√£o-branco da linha
 noremap <expr> <silent> <Home> col('.') == match(getline('.'),'\S')+1 ? '0' : '^'
 imap <silent> <Home> <C-O><Home>
 
@@ -102,13 +102,13 @@ fun! SetTab4()
     set tabstop=4 shiftwidth=4 softtabstop=4
 endfun
 
-" Altera o tamanho do tab para 2 e usa espaÁos
+" Altera o tamanho do tab para 2 e usa espa√ßos
 fun! SetSpace2()
     set expandtab
     set tabstop=2 shiftwidth=2 softtabstop=2
 endfun
 
-" Altera o tamanho do tab para 4 e usa espaÁos
+" Altera o tamanho do tab para 4 e usa espa√ßos
 fun! SetSpace4()
     set expandtab
     set tabstop=4 shiftwidth=4 softtabstop=4
