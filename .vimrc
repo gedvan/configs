@@ -17,6 +17,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'vim-scripts/closetag.vim'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'Valloric/YouCompleteMe'
 
 
 call neobundle#end()
@@ -28,7 +29,7 @@ NeoBundleCheck
 " ------------------------------------------------------------------------------
 
 " Visual
-set number          " show line numbers
+set nonumber        " don't show line numbers
 set ruler           " show the ruler
 set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
 set showcmd
