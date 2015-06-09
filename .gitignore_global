@@ -1,0 +1,8 @@
+*.swp
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+Thumbs.db
+bower_components/
+node_modules/
