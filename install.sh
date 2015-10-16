@@ -3,7 +3,7 @@
 context="$(dirname "$(readlink -f "$0")")"
 cd "$context"
 
-for subtree in ".vim/bundle/neobundle.vim https://github.com/Shougo/neobundle.vim master"
+for subtree in "home/.vim/bundle/neobundle.vim https://github.com/Shougo/neobundle.vim master"
 do
   git subtree pull --prefix $subtree --squash || git subtree add --prefix $subtree --squash
 done
@@ -16,7 +16,7 @@ rsync -av \
   --exclude '*.swp' \
   --exclude 'install.sh' \
   --exclude 'README.md' \
-  "$context/" ~/
+  "$context/home/" ~/
 
 vim +NeoBundleInstall +qall
 
